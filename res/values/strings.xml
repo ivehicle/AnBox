@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- restart layout -->
+  <string name="restart_text">Thanks for using AnBox. Please, drive safely and have a good day\n
+\n
+Notice: This program is using Google map and SMS for sending a SOS message.
+This may charge you additional data and SMS costs. If you don\'t want to use these features,  
+please, disable data connection at System Settings -> Wireless and networks -> Data network setting -> Not allowed and don\'t check
+\'Send SOS message when a collision is detected\' item of this program\'s setting menu to disable SMS\n
+\n
+Will start to record vision and sensors within 10 seconds. If you want other task, select a button below</string>
+
+  <!-- layout main -->
+  <string name="initial_speed">Speed: </string>
+  <string name="initial_shock">No collision happened</string>
+  <string name="initial_addr">Obtaining address</string>
+
+
+  <!--  layout recordviewer -->
+  <string name="time_order">Time</string>
+  <string name="impact_order">Collision</string>
+
+  <string name="hello">Hello World, WhereAmI</string>
+  <string name="app_name">AnBox</string>
+  <string name="alert_dialog_update_TD"> Update time and distance </string>
+  <string name="alert_dialog_updateTime"> GPS update time (ms):</string>
+  <string name="alert_dialog_accUpdateTime"> ACC update time (ms):</string>
+  <string name="alert_dialog_updateDistance"> Update distance (m): </string>
+  <string name="alert_dialog_ok">OK</string>
+  <string name="alert_dialog_cancel">Cancel</string>
+  <string name="file_name_format" translatable="false">yyyyMMddHHmmss</string>
+  <string name="data_dir">iDrive</string>
+
+  <!-- Preferences -->
+  <string name="sensor_setting">Sensor setting</string>
+  <string name="storage_setting">Storage setting</string>
+  <string name="limit_storage">Limit storage for recording</string>
+  <string name="limit_storage_summary">If checked, it use only limited storage.</string>
+  <string name="storage_capacity_normal">Storage capacity for recording normal data</string>
+  <string name="storage_capacity_normal_summary">Limit storage for recording normal data upto...</string>
+  <string name="storage_capacity_shock">Storage capacity for collision data</string>
+  <string name="storage_capacity_shock_summary">Limit storage for recording collision data upto...</string>
+  <string name="unit_mb">Unit is in MB</string>
+  
+  <!-- RecordActivity -->
+  <string name="external_storage_error_title">External storage is not mounted</string>
+  <string name="external_storage_error_msg">Please, check whether external storage is mounted in read-write mode</string>
+  <string name="external_storage_error_btn">Exit</string>
+  <string name="first_time_exec_title">First time execution notice</string>
+  <string name="first_time_exec_msg">Thanks for using AnBox. It is required to calibrate sensors the first time
+when you use AnBox. Please, follow the instruction when calibrating sensors.\n
+\n
+Notice: This program is using Google map and SMS for sending a SOS message.
+This may charge you additional data and SMS costs. If you don\'t want to use these features,  
+please, disable data connection at System Settings -> Wireless and networks -> Data network setting -> Not allowed and don\'t check
+\'Send SOS message when a collision is detected\' item of this program\'s setting menu to disable SMS\n
+\n
+Will start to record vision and sensors within 10 seconds. If you want other task, select a button below</string>
+
+  <string name="unit_ns">Unit is nanosecond</string>
+  <string name="unit_ms">Unit is millisecond</string>
+  <string name="unit_s">Unit is second</string>
+  <string name="unit_m">Unit is meter</string>
+
+  <string name="advancedSetting">Advanced Setting</string>
+  <string name="adv_set_gps">GPS update time</string>
+  <string name="adv_set_gps_summary">GPS update time(ms)</string>
+  <string name="adv_set_acc">ACC Update time</string>
+  <string name="adv_set_acc_summary">ACC Update time(ns)</string>
+  <string name="adv_set_dist">Update distance</string>
+  <string name="adv_set_dist_summary">GPS update distance(m)</string>
+  <string name="adv_set_sensor_write_period">Update period for sensor data file</string>
+  <string name="adv_set_sensor_write_period_summary">Sensor file update time(ms)</string>
+  <string name="adv_set_address">Update period for address update</string>
+  <string name="adv_set_address_summary">Address update time(ms)</string>
+  
+  <string name="need_calibration">Need to calibrate sensors</string>
+  <string name="need_calibration_summary">If checked, sensor calibration will executed next time</string>
+  <string name="sensor_sensitivity">Collision sensitivity</string>
+  <string name="sensor_sensitivity_summary">High value means the most sensitive</string>
+  <string name="sensor_sensitivity_dialog">Collision sensitivity</string>
+  <string name="sos_message_setting">SOS message setting</string>
+  <string name="send_sos_message">Send SOS message when a collision is detected</string>
+  <string name="send_sos_message_summary">If a collision is detected, a SOS message will be sent to configured numbers</string>
+  <string name="message_to_send">Message to send</string>
+  <string name="message_to_send_summary">This message will be sent</string>
+  <string name="message_to_send_defaultvalue">Please check if an accident occur at location [addr], [gps]. Call 911</string>
+  <string name="message_to_send_dialog">Message to send</string>
+  <string name="number_of_message_to_send">Phone number list to be sent to</string>
+  <string name="number_of_message_to_send_summary">SOS message will be sent to these numbers</string>
+  <string name="number_of_message_to_send_dialog">Phone number list</string>
+  <string name="phone_list_text">Enter phone numbers</string>
+  <string name="message_cancel_wait_time">Time for which a user can cancel</string>
+  <string name="message_cancel_wait_time_summary">The program will wait user to cancel for this amount of time</string>
+  <string name="addr_book">Contacts</string>
+
+  <string name="menu_record">Record</string>
+  <string name="menu_view">View</string>
+  <string name="menu_setting">Setting</string>
+  <string name="menu_cal">Calibrate</string>
+  <string name="menu_restart">Restart</string>
+  <string name="menu_about">About</string>
+  <string name="menu_exit">Exit</string>
+  <string name="menu_test">Test</string>
+  <string name="menu_sms">SOS Message</string>
+
+  <string name="about_title">About AnBox</string>
+  <string name="about_msg">AnBox is a synonym for Android blackbox and a blackbox program for your smart phone which can capture various sensors(including vision) while you're driving. Captured data may show you're not responsible for an accident when there is a debate about who\'s responsible for it\n
+\n
+Authored by iVehicle Lab\n
+Version: 1.2\n
+\n
+Change Log:\n
+v1.2: Bug fix release of v1.0\n
+- Added initial screen that allows user to select either record, view, or setting function\n
+- Bug fixes related to speed/orientation\n
+- Improved reliability\n
+- Doesn\'t jump into setting screen at the 1st execution\n
+- Bigger font at view screen\n
+\n
+Phone info:</string>
+  <string name="terminating">Now terminating...</string> 
+
+  <!-- VisionRecorder -->
+  <string name="preview_fail">Failed to start preview. Please, retry</string>
+
+  <!-- Sensor Tracker -->
+  <string name="starting_sensor">Starting sensors</string>
+  <string name="no_shock">never</string>
+  <string name="no_address">Address unavailable</string>
+  <string name="calibration_title">Calibration</string>
+  <string name="calibration_start_msg">Please, don't move, while calibrating sensors</string>
+  <string name="calibration_end_msg">Calibration done</string>
+  <string name="sensing_started">Sensing started</string>
+  <string name="sensing_stopped">Sensing stopped</string>
+  <string name="no_gps_provider">Please, turn on GPS</string>
+  <string name="side_shock">Side collision detected!</string>
+  <string name="frontal_shock">Head-on collision detected!</string>
+  <string name="speed_bump">Caution! speed bump</string>
+  <string name="gps_fix">GPS fix obtained</string>
+  <string name="gps_started">GPS started, waiting for fix</string>
+  <string name="gps_stopped">GPS Stopped</string>
+  <string name="no_location">No location found</string>
+  <string name="latitude">Lat:</string>
+  <string name="longitude">Long:</string>
+  <string name="normal">Normal</string>
+  <string name="shock_at">Collision at</string>
+  
+  <!--  SOSMessageSender -->
+  <string name="sos_dialog_title">SOS message will be sent</string>
+  <string name="sending_sms">Sending a message</string>
+</resources>

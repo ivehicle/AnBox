@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/MainFrame"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:clickable="true" xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- VisionRecoder Layout -->
+	<FrameLayout android:id="@+id/RecordLayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:clickable="true" >
+		<SurfaceView android:id="@+id/surface_view" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" />
+		<RelativeLayout android:id="@+id/RecordInfoLayout" android:visibility="invisible"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<view class="com.ivehicle.AnBox.GraphView" android:id="@+id/SpeedGraph"
+				android:layout_width="fill_parent" android:layout_height="100px"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true">
+			</view>
+		</RelativeLayout>
+	</FrameLayout>
+
+	<!-- MapView Layout -->
+	<FrameLayout android:id="@+id/MapViewLayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:visibility="invisible">
+		<com.google.android.maps.MapView
+			android:id="@+id/myMapView" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:enabled="true"
+			android:clickable="true" android:apiKey="0e5fsiYL2sLXT5VCWvjiYCOBi021jDRXPTcfNxQ" />
+		<!-- yskim's debug key: android:apiKey="0e5fsiYL2sLUjDEtsG7C-aiomqugQaPDrhe7rhw" /> -->
+		<!-- yskim's release key: android:apiKey="0e5fsiYL2sLXT5VCWvjiYCOBi021jDRXPTcfNxQ" /> -->
+		<!-- hjsohn's company debug key: android:apiKey="09_l9MD5RCYzrkqN2RTZyWPYmh18A1NzAHrcD6Q" -->
+		<!-- hjsohn's home debug key: 09_l9MD5RCYzhRuJz-OrltGNxm0ApDyDjjzIvWQ -->
+		<RelativeLayout android:id="@+id/Relative02"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<view class="com.ivehicle.AnBox.GraphView" android:id="@+id/MapviewAccGraph"
+				android:layout_width="fill_parent" android:layout_height="100px"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true">
+			</view>			
+		<!--
+				<Button android:id="@+id/buttonReset" android:layout_width="100px"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true" android:text="Calibration" />
+			<view class="com.ivehicle.AnBox.GraphView" android:id="@+id/MapviewAccGraphZ"
+				android:layout_width="fill_parent" android:layout_height="50px"
+				android:layout_centerHorizontal="true" android:paddingLeft="8px"
+				android:layout_toRightOf="@+id/buttonReset" android:layout_above="@id/MapviewAccGraph">
+			</view>
+			<view class="com.ivehicle.AnBox.GraphView" android:id="@+id/MapviewAccGraphX"
+				android:layout_width="fill_parent" android:layout_height="50px"
+				android:layout_centerHorizontal="true" android:paddingLeft="8px"
+				android:layout_toRightOf="@+id/buttonReset" android:layout_above="@id/MapviewAccGraphZ">
+			</view>
+		-->
+		</RelativeLayout>
+
+	</FrameLayout>
+
+	<!-- 
+	<FrameLayout android:id="@+id/recordFrame"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:clickable="true" android:visibility="visible">
+		<ImageView
+	 		android:layout_width="wrap_content" 
+	 		android:layout_height="wrap_content" 
+	 		android:scaleType="fitCenter"
+	 		android:src="@drawable/capture_image">
+	 	</ImageView>
+		<RelativeLayout android:id="@+id/Relative01"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+			<view class="com.ivehicle.AnBox.GraphView" android:id="@+id/SpeedGraph"
+				android:layout_width="fill_parent" android:layout_height="100px"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true">
+			</view>
+		</RelativeLayout>
+	</FrameLayout>
+	-->
+
+	<RelativeLayout android:id="@+id/StatusLayout" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="invisible">
+		<TextView android:text="@string/initial_speed" android:id="@+id/SpeedText"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ffffffff" android:background="#40ff0000"
+			android:textSize="40px" android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true">
+		</TextView>
+
+		<DigitalClock android:id="@+id/TimeText"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ffffffff" android:background="#30000000"
+			android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+			android:paddingLeft="8px" android:paddingRight="8px"
+			android:textSize="30px">
+		</DigitalClock>
+		<TextView android:text="@string/initial_shock" android:id="@+id/ShockTime"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/TimeText" android:textColor="#ffffffff"
+			android:background="#30000000" android:layout_alignParentRight="true"
+			android:paddingLeft="8px" android:paddingRight="8px"
+			android:textSize="30px">
+		</TextView>
+		<TextView android:text="@string/initial_addr" android:id="@+id/Area"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_below="@id/ShockTime" android:textColor="#ffffffff"
+			android:background="#30000000" android:layout_alignParentRight="true"
+			android:paddingLeft="8px" android:paddingRight="8px"
+			android:textSize="30px">
+		</TextView>
+		<view class="com.ivehicle.AnBox.CompassView" android:id="@+id/CompassView"
+			android:layout_width="60px" android:layout_height="60px"
+			android:layout_alignParentLeft="true" android:layout_below="@id/SpeedText"
+			android:padding="4px" android:layout_marginTop="4px">
+		</view>
+		<!--
+			not use <view class="com.ivehicle.AnBox.RecordingIcon"
+			android:id="@+id/RecordState" android:layout_width="50px"
+			android:layout_height="50px" android:layout_alignParentRight="true"
+			android:layout_below="@id/Area"> </view>
+		-->
+		<ImageButton android:id="@+id/LeftScrollButton"
+			android:src="@drawable/leftarrow" android:gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+		</ImageButton>
+		<ImageButton android:id="@+id/RightScrollButton"
+			android:src="@drawable/rightarrow" android:gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true">
+		</ImageButton>
+		<TextView android:id="@+id/textStatus" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="#ffffffff"
+			android:background="#40ff0000" android:textSize="30px"
+			android:layout_centerHorizontal="true" android:layout_alignParentTop="true">
+		</TextView>
+
+		<TextView android:id="@+id/myLocationText"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#ffffffff" android:background="#40ff0000"
+			android:textSize="30px" android:layout_centerHorizontal="true"
+			android:layout_below="@id/textStatus">
+		</TextView>
+	</RelativeLayout>
+	<view class="com.ivehicle.AnBox.CrashEffectView" android:id="@+id/CrashEffectView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	</view>
+
+	<RelativeLayout android:id="@+id/SplashScreenLayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="#90000000" android:visibility="visible">
+		<TextView android:layout_height="wrap_content" android:text="@string/restart_text"
+			android:layout_width="wrap_content" android:id="@+id/restart_text"
+			android:layout_centerInParent="true" android:textSize="20px"
+			android:paddingBottom="30px" android:textColor="#ffffff" 
+			android:paddingLeft="30px" android:paddingRight="30px" 
+			android:paddingTop="30px" android:gravity="center"></TextView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true" android:layout_marginBottom="10px">
+			<Button android:text="@string/menu_record" android:id="@+id/restart_record" android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:minWidth="120px"></Button>
+			<Button android:text="@string/menu_view" android:id="@+id/restart_view" android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:minWidth="120px"></Button>
+			<Button android:text="@string/menu_setting" android:id="@+id/restart_setting" android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:minWidth="120px"></Button>
+			<Button android:text="@string/menu_exit" android:id="@+id/restart_exit" android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:minWidth="120px"></Button>
+		</LinearLayout>
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<ImageButton android:id="@+id/CloseButton"
+		android:layout_width="200px" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_alignParentTop="true"
+		android:src="@drawable/backbutton" android:gravity="center" />
+
+	<TextView android:text="@string/time_order" android:id="@+id/ListTitleText"
+		android:layout_width="100px" android:layout_height="wrap_content"
+		android:layout_alignParentRight="true" android:layout_below="@id/CloseButton"
+		android:gravity="center" android:textSize="28px" android:textColor="#ff707070"
+		android:background="#ff202020" android:clickable="true" android:paddingTop="2px" android:paddingBottom="2px"/>
+
+	<TextView android:text="@string/impact_order" android:id="@+id/ListTitleText2"
+		android:layout_width="100px" android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/ListTitleText" android:layout_below="@id/CloseButton"
+		android:gravity="center" android:textSize="28px" android:textColor="#ff000000"
+		android:background="#ffeeeeee" android:clickable="true" android:paddingTop="2px" android:paddingBottom="2px"/>
+
+	<FrameLayout android:id="@+id/reviewFrame"
+		android:layout_width="200px" android:layout_height="fill_parent"
+		android:clickable="true" android:layout_alignParentRight="true"
+		android:layout_below="@id/ListTitleText">
+		<ListView android:id="@+id/AccidentList" android:choiceMode="singleChoice"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:background="#ff111111"  android:visibility="visible"/>
+		<ListView android:id="@+id/TimeList" android:choiceMode="singleChoice"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:background="#ff111111"  android:visibility="invisible"/>
+	</FrameLayout>
+
+	<VideoView android:id="@+id/RecordView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_toLeftOf="@id/CloseButton"
+		android:layout_centerVertical="true" />
+	<!--
+	<ImageView
+ 		android:layout_width="wrap_content" 
+ 		android:layout_height="wrap_content" 
+ 		android:src="@drawable/capture_image2"
+       android:layout_toLeftOf="@id/CloseButton" android:layout_centerVertical="true" android:scaleType="fitEnd" android:fitsSystemWindows="true">
+    </ImageView>
+    -->
+</RelativeLayout>

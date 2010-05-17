@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- restart layout -->
+  <string name="restart_text">앤박스를 사용해 주셔서 감사합니다. 안전운행으로 좋은 하루 되세요.\n
+\n
+주의: 본 프로그램은 구글맵과 충돌 감지시 제한적으로 단문메시지를 보내고 있습니다. 
+ 이로 인해 약간의 데이터 요금과 SMS 요금이 부과될 수 있습니다. 기능을 사용하지 않기를 원하시면 구글맵의 경우 시스템 설정 프로그램
+-> 무선 및 네트워크 -> 데이터 네트워크 설정에서 허용하지 않음을 선택하시고, 단문메시지의 경우 본 프로그램 설정 메뉴의 \'사고 문자메시지
+전송 여부\'에서 체크 해제하시기 바랍니다.\n
+\n
+10초 후에는 자동으로 녹화를 시작하게 됩니다. 바로 녹화, 설정, 재생, 종료를 원하시면 아래 버튼을 클릭하세요.
+</string>
+
+  <!-- record layout -->
+  <string name="initial_speed">속도: 계산중</string>
+  <string name="initial_shock">충돌 발생: 없음</string>
+  <string name="initial_addr">주소 얻는 중</string>
+
+  <!--  layout recordviewer -->
+  <string name="time_order">시간순</string>
+  <string name="impact_order">충돌순</string>
+
+  <string name="hello">Hello World, WhereAmI</string>
+  <string name="app_name">앤박스</string>
+  <string name="alert_dialog_update_TD">갱신 주기 및 거리 기준</string>
+  <string name="alert_dialog_updateTime">GPS 갱신 주기(ms)</string>
+  <string name="alert_dialog_accUpdateTime">가속도 갱신 주기(ms)</string>
+  <string name="alert_dialog_updateDistance">거리 갱신 기준(m)</string>
+  <string name="alert_dialog_ok">확인</string>
+  <string name="alert_dialog_cancel">취소</string>
+  <string name="sensor_setting">센서 설정</string>
+  <string name="storage_setting">저장 용량 설정</string>
+  <string name="limit_storage">저장 공간 제한</string>
+  <string name="limit_storage_summary">선택하면 설정된 공간만 사용합니다</string>
+  <string name="storage_capacity_normal">일반 데이터 저장 공간</string>
+  <string name="storage_capacity_normal_summary">일반 데이터용 저장 공간을 설정합니다</string>
+  <string name="storage_capacity_shock">충돌 데이터 저장 공간</string>
+  <string name="storage_capacity_shock_summary">충돌 데이터용 저장 공간을 설정합니다</string>
+  <string name="calibrating">센서값 조정중...</string>
+
+  <!-- MainActivity -->
+  <string name="external_storage_error_title">외장 저장 장치 연결 오류</string>
+  <string name="external_storage_error_msg">외장 저장 장치가 읽기/쓰기 모드로 연결되어 있는지 확인하세요</string>
+  <string name="external_storage_error_btn">종료</string>
+  <string name="first_time_exec_title">최초 실행 공지</string>
+  <string name="first_time_exec_msg">앤박스를 사용해 주셔서 감사합니다. 앤박스 최초 실행시 1회에 한하여 센서값을 조정해
+주셔야 합니다. 조금 후에 센서값 조정이 실행될 때, 화면 안내에 따라주시기 바랍니다.\n
+\n 
+주의: 본 프로그램은 구글맵과 충돌 감지시 제한적으로 단문메시지를 보내고 있습니다. 
+ 이로 인해 약간의 데이터 요금과 SMS 요금이 부과될 수 있습니다. 기능을 사용하지 않기를 원하시면 구글맵의 경우 시스템 설정 프로그램
+-> 무선 및 네트워크 -> 데이터 네트워크 설정에서 허용하지 않음을 선택하시고, 단문메시지의 경우 본 프로그램 설정 메뉴의 \'사고 문자메시지
+전송 여부\'에서 체크 해제하시기 바랍니다.\n
+\n
+10초 후에는 자동으로 녹화를 시작하게 됩니다. 바로 녹화, 설정, 재생, 종료를 원하시면 아래 버튼을 클릭하세요.</string>
+
+  <string name="unit_ns">단위는 나노초입니다.</string>
+  <string name="unit_ms">단위는  밀리초입니다.</string>
+  <string name="unit_s">단위는 초입니다.</string>
+  <string name="unit_m">단위는  미터입니다.</string>
+
+  <string name="advancedSetting">고급 설정</string>
+  <string name="adv_set_gps">GPS 갱신 주기</string>
+  <string name="adv_set_gps_summary">GPS로부터  위치를  갱신하는 주기를 설정합니다</string>
+  <string name="adv_set_acc">가속도 센서 주기</string>
+  <string name="adv_set_acc_summary">프로그램이 가속도 센서로 부터 상태를 갱신하는 주기를 설정합니다</string>
+  <string name="adv_set_dist">위치 판별 해상도</string>
+  <string name="adv_set_dist_summary">GPS로부터 위치를 인식할 최소 거리를 설정합니다</string>
+  <string name="adv_set_sensor_write_period">센서 데이터파일 저장 주기</string>
+  <string name="adv_set_sensor_write_period_summary">센서데이터파일을 갱신하는 주기를  설정합니다</string>
+  <string name="adv_set_address">주소표시 갱신 주기</string>
+  <string name="adv_set_address_summary">주소를  갱신하는 주기를 설정합니다.</string>
+  
+  <string name="need_calibration">센서값 교정</string>
+  <string name="need_calibration_summary">다음 실행시, 자동으로 센서값을 교정할지 설정합니다</string>
+  <string name="sensor_sensitivity">충돌 판단 민감도</string>
+  <string name="sensor_sensitivity_summary">충돌로 판단할 민감도를 설정합니다</string>
+  <string name="sensor_sensitivity_dialog">충돌 판단 민감도</string>
+  <string name="sos_message_setting">사고 문자메세지 전송 설정</string>
+  <string name="send_sos_message">사고 문자메세지  전송 여부</string>
+  <string name="send_sos_message_summary">선택하면 사고로 판단 시, 등록된 수신인에게 SMS문자를 발송합니다</string>
+  <string name="message_to_send">사고 문자 메세지</string>
+  <string name="message_to_send_summary">발송할 메시지 내용을 입력합니다</string>
+  <string name="message_to_send_dialog">전송할 메세지</string>
+  <string name="message_to_send_defaultvalue">사고 확인후 119신고 요망. 위치:[addr],[gps]</string>
+  <string name="number_of_message_to_send">수신인 등록</string>
+  <string name="number_of_message_to_send_summary">사고문자를 수신할 수신번호를 등록합니다</string>
+  <string name="number_of_message_to_send_dialog">전화 번호 목록</string>
+  <string name="phone_list_text">전화 번호를 입력하세요</string>
+  <string name="message_cancel_wait_time">문자 전송 취소 대기 시간</string>
+  <string name="message_cancel_wait_time_summary">사고 인식 시, 문자를 보내기 전 취소 대기 시간을 설정합니다</string>
+  <string name="addr_book">주소록</string>
+
+  <string name="menu_record">녹화</string>
+  <string name="menu_view">재생</string>
+  <string name="menu_setting">설정</string>
+  <string name="menu_cal">센서값 교정</string>
+  <string name="menu_restart">재시작</string>
+  <string name="menu_about">프로그램소개</string>
+  <string name="menu_exit">종료</string>
+  <string name="menu_test">시험</string>
+  <string name="menu_sms">SOS 메시지</string>
+
+  <string name="about_title">앤박스란</string>
+  <string name="about_msg">앤박스는 Android Blackbox의 약자로 운전중  영상을 포함한 다양한 센서값을 
+저장해 주는 스마트폰용 블랙박스 프로그램입니다. 
+사고 발생시 책임 소재로 인한 논쟁이 있을 때, 
+사고의 원인을 정확히 파악하는데 도움이 될 수 있습니다\n
+\n
+개발: iVehicle 랩\n
+버전: 1.2\n
+\n
+수정이력:\n
+v1.2: 1.0 버그 수정 버전\n
+- 녹화, 재생, 설정을 선택할 수 있는 초기 화면 추가\n
+- 속도값/주행 방향 관련 버그 수정\n
+- 안정성 향상\n
+- 더 이상 최초 실행시 설정 화면으로 넘어가지 않음\n
+- 재생 화면에서 목록 탭 폰트 크기 수정\n
+\n
+휴대폰 정보: </string>
+  <string name="terminating">종료중...</string> 
+
+  <!-- VisionRecorder -->
+  <string name="preview_fail">녹화 화면을 시작하지 못했습니다. 다시 시도해 주세요</string>
+
+  <!-- Sensor Tracker -->
+  <string name="starting_sensor">센서 시작 중</string>
+  <string name="no_shock">없음</string>
+  <string name="no_address">주소 없음</string>  
+  <string name="calibration_title">센서값 교정</string>
+  <string name="calibration_start_msg">센서값을 교정중이오니 잠시 움직이지 마세요</string>
+  <string name="calibration_end_msg">센서값 교정 완료</string>
+  <string name="sensing_started">센싱 시작</string>
+  <string name="sensing_stopped">센싱 종료</string>
+  <string name="no_gps_provider">GPS를 켜세요</string>
+  <string name="side_shock">측면 충돌 발생!</string>
+  <string name="frontal_shock">정면 충돌 발생!</string>
+  <string name="speed_bump">노면 상태 주의!</string>
+  <string name="gps_fix">GPS 위치 수신 개시</string>
+  <string name="gps_started">GPS 초기화중</string>
+  <string name="gps_stopped">GPS 종료</string>
+  <string name="no_location">GPS 위치 확인 불가</string>
+  <string name="latitude">위도:</string>
+  <string name="longitude">경도:</string>
+  <string name="normal">정상</string>
+  <string name="shock_at">충돌 발생:</string>
+  
+  <!-- SOSMessageSender -->
+  <string name="sos_dialog_title">SOS 메시지를 보냅니다</string>
+  <string name="sending_sms">메시지 보내는 중:</string>
+</resources>

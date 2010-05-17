@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Copyright (C) 2008 The Android Open Source Project Licensed under the
+		Apache License, Version 2.0 (the "License"); you may not use this file
+		except in compliance with the License. You may obtain a copy of the
+		License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+		by applicable law or agreed to in writing, software distributed under
+		the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+	-->
+
+	<!--
+		This is a primitive example showing the different types of preferences
+		available.
+	-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/sensor_setting">
+		<CheckBoxPreference android:key="need_calibration"
+			android:title="@string/need_calibration"
+			android:summary="@string/need_calibration_summary"
+			android:defaultValue="true"/>
+		<ListPreference android:key="sensor_sensitivity"
+			android:title="@string/sensor_sensitivity" android:summary="@string/sensor_sensitivity_summary"
+			android:entries="@array/entries_sensor_sensitivity"
+			android:entryValues="@array/entryvalues_sensor_sensitivity"
+			android:dialogTitle="@string/sensor_sensitivity_dialog"
+			android:defaultValue="3" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/sos_message_setting">
+		<CheckBoxPreference android:key="send_sos_message"
+			android:title="@string/send_sos_message"
+			android:summary="@string/send_sos_message_summary" />
+		<EditTextPreference android:key="message_to_send"
+			android:dependency="send_sos_message"
+			android:title="@string/message_to_send"
+			android:summary="@string/message_to_send_summary"
+			android:dialogTitle="@string/message_to_send_dialog" 
+			android:defaultValue="@string/message_to_send_defaultvalue" />
+		<com.ivehicle.AnBox.PhoneListPreference
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:key="number_of_message_to_send" android:dependency="send_sos_message"
+			android:title="@string/number_of_message_to_send"
+			android:summary="@string/number_of_message_to_send_summary"
+			android:dialogTitle="@string/number_of_message_to_send_dialog" />
+		<EditTextPreference android:key="message_cancel_wait_time"
+			android:dependency="send_sos_message"
+			android:title="@string/message_cancel_wait_time"
+			android:summary="@string/message_cancel_wait_time_summary"
+			android:dialogTitle="@string/unit_s" android:inputType="numberDecimal"
+			android:defaultValue="30" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/storage_setting">
+		<CheckBoxPreference android:key="limit_storage"
+			android:title="@string/limit_storage"
+			android:summary="@string/limit_storage_summary"
+			android:defaultValue="true" />
+		<EditTextPreference android:key="storage_size"
+			android:dependency="limit_storage" android:title="@string/storage_capacity_normal"
+			android:summary="@string/storage_capacity_normal_summary"
+			android:dialogTitle="@string/unit_mb"
+			android:inputType="numberDecimal" android:gravity="center"
+			android:defaultValue="2048" />
+		<EditTextPreference android:key="shock_storage_size"
+			android:dependency="limit_storage" android:title="@string/storage_capacity_shock"
+			android:summary="@string/storage_capacity_shock_summary"
+			android:dialogTitle="@string/unit_mb" android:inputType="numberDecimal"
+			android:gravity="center"
+			android:defaultValue="410" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/advancedSetting">
+	<!-- 
+		<PreferenceScreen 
+			android:key="calibration_preference"
+			android:title="@string/Calibration"
+			android:summary="@string/Don't move while calibrating" />
+	-->
+		<EditTextPreference android:key="adv_set_gps"
+			android:title="@string/adv_set_gps" android:summary="@string/adv_set_gps_summary"
+			android:dialogTitle="@string/unit_ms" android:inputType="numberDecimal"
+			android:defaultValue="1000"			
+			android:gravity="center" />
+		<EditTextPreference android:key="adv_set_acc"
+			android:title="@string/adv_set_acc" android:summary="@string/adv_set_acc_summary"
+			android:dialogTitle="@string/unit_ns" android:inputType="numberDecimal"
+			android:defaultValue="10000000"
+			android:gravity="center" />
+		<EditTextPreference android:key="adv_set_dist"
+			android:title="@string/adv_set_dist" android:summary="@string/adv_set_dist_summary"
+			android:dialogTitle="@string/unit_m" android:inputType="numberDecimal"
+			android:defaultValue="0"
+			android:gravity="center" />
+		<EditTextPreference android:key="adv_set_sensor_write_period"
+			android:title="@string/adv_set_sensor_write_period" android:summary="@string/adv_set_sensor_write_period_summary"
+			android:dialogTitle="@string/unit_ms" android:inputType="numberDecimal"
+			android:defaultValue="100"
+			android:gravity="center" />
+		 <EditTextPreference android:key="adv_set_address"
+			android:title="@string/adv_set_address" android:summary="@string/adv_set_address_summary"
+			android:dialogTitle="@string/unit_ms" android:inputType="numberDecimal"
+			android:defaultValue="5000"
+			android:gravity="center" /> 			
+	</PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:alwaysDrawnWithCache="false"
+	android:animationCache="true" android:fadingEdge="none"
+	android:layout_width="wrap_content" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:padding="10px" android:gravity="center">
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_below="@+id/EmergencyCallNum1" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView android:text="@string/phone_list_text"
+			android:id="@+id/TextView01" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginBottom="10px">
+		</TextView>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_below="@+id/EmergencyCallNum1" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText android:id="@+id/EmergencyCallNum1"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:inputType="phone" android:gravity="center" android:minWidth="220px">
+			</EditText>
+			<Button android:id="@+id/ContactButton1"
+				android:layout_height="wrap_content" android:text="@string/addr_book"
+				android:layout_width="wrap_content"></Button>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_below="@+id/EmergencyCallNum1" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<EditText android:id="@+id/EmergencyCallNum2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:inputType="phone" android:gravity="center" android:minWidth="220px">
+		</EditText>
+		<Button android:id="@+id/ContactButton2" android:layout_height="wrap_content"
+			android:text="@string/addr_book" android:layout_width="wrap_content"></Button>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_below="@+id/EmergencyCallNum1" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<EditText android:id="@+id/EmergencyCallNum3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:inputType="phone" android:gravity="center" android:minWidth="220px">
+		</EditText>
+		<Button android:id="@+id/ContactButton3" android:layout_height="wrap_content"
+			android:text="@string/addr_book" android:layout_width="wrap_content"></Button>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_below="@+id/EmergencyCallNum1" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<EditText android:id="@+id/EmergencyCallNum4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:inputType="phone" android:gravity="center" android:minWidth="220px">
+		</EditText>
+		<Button android:id="@+id/ContactButton4" android:layout_height="wrap_content"
+			android:text="@string/addr_book" android:layout_width="wrap_content"></Button>
+		</LinearLayout>
+	</LinearLayout>
+
+</ScrollView>
