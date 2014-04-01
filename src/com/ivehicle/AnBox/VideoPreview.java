@@ -1,5 +1,9 @@
 /*
+ * AnBox, and an Android Blackbox application for the have-not-so-much-money's
+ * Copyright (C) 2010 Yoonsoo Kim, Heekuk Lee, Heejin Sohn
  * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Some part of this source is quoted from AOSP.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
