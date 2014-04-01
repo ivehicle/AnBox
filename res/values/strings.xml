@@ -105,7 +105,7 @@ Will start to record vision and sensors within 10 seconds. If you want other tas
   <string name="menu_sms">SOS Message</string>
 
   <string name="about_title">About AnBox</string>
-  <string name="about_msg">AnBox is a synonym for Android blackbox and a blackbox program for your smart phone which can capture various sensors(including vision) while you're driving. Captured data may show you're not responsible for an accident when there is a debate about who\'s responsible for it\n
+  <string name="about_msg">AnBox is a synonym for Android blackbox and a blackbox program for your smart phone which can capture various sensors(including vision) while you\'re driving. Captured data may show you\'re not responsible for an accident when there is a debate about who\'s responsible for it\n
 \n
 Authored by iVehicle Lab\n
 Version: 1.2\n
@@ -129,7 +129,7 @@ Phone info:</string>
   <string name="no_shock">never</string>
   <string name="no_address">Address unavailable</string>
   <string name="calibration_title">Calibration</string>
-  <string name="calibration_start_msg">Please, don't move, while calibrating sensors</string>
+  <string name="calibration_start_msg">Please, don\'t move, while calibrating sensors</string>
   <string name="calibration_end_msg">Calibration done</string>
   <string name="sensing_started">Sensing started</string>
   <string name="sensing_stopped">Sensing stopped</string>
