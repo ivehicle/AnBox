@@ -23,17 +23,19 @@ import java.io.FilenameFilter;
 
 public class SizeFilter implements FilenameFilter {
 
-	public final static int OP_EQUAL = 0;
-	public final static int OP_GREATER_THAN = 1;
-	public final static int OP_LESS_THAN = 2;
-	public final static int OP_GREATER_THAN_OR_EQUAL = 3;
-	public final static int OP_LESS_THAN_OR_EQUAL = 4;
-	public final static int OP_NOT_EQUAL = 5;
+	public enum Operation {
+		EQUAL,
+		GREATER_THAN,
+		LESS_THAN,
+		GREATER_THAN_OR_EQUAL,
+		LESS_THAN_OR_EQUAL,
+		NOT_EQUAL;
+	}
 
-	private int op = OP_EQUAL;
+	private Operation op = Operation.EQUAL;
 	private long sz = 0;
 
-	public SizeFilter(int operation, long size) {
+	public SizeFilter(Operation operation, long size) {
 		this.op = operation;
 		this.sz = size;
 	}
@@ -41,22 +43,22 @@ public class SizeFilter implements FilenameFilter {
 	public boolean accept(File dir, String fn) {
 		long fileSize = new File(dir, fn).length();
 		switch (op) {
-		case OP_EQUAL:
+		case EQUAL:
 			return (fileSize == sz);
 
-		case OP_GREATER_THAN:
+		case GREATER_THAN:
 			return (fileSize > sz);
 
-		case OP_LESS_THAN:
+		case LESS_THAN:
 			return (fileSize < sz);
 
-		case OP_GREATER_THAN_OR_EQUAL:
+		case GREATER_THAN_OR_EQUAL:
 			return (fileSize >= sz);
 
-		case OP_LESS_THAN_OR_EQUAL:
+		case LESS_THAN_OR_EQUAL:
 			return (fileSize < sz);
 
-		case OP_NOT_EQUAL:
+		case NOT_EQUAL:
 			return (fileSize != sz);
 		}
 

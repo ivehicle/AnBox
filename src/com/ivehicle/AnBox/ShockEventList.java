@@ -45,7 +45,7 @@ public class ShockEventList extends Vector<ShockEvent> {
 		dataFileNames = new File(Config.getDataDir()).list(
 			new AndFilter(
 				new FilenameFilterByExtension(Config.SHOCK_EXT),
-				new SizeFilter(SizeFilter.OP_GREATER_THAN, 0)
+				new SizeFilter(SizeFilter.Operation.GREATER_THAN, 0)
 				)
 			);
 
