@@ -1,6 +1,6 @@
 This application is an Android blackbox application for have-not-so-much-money
 users. Features include
-- Continous recording
+- Continuous recording
 - Event recording
 - Sending SOS message to configured phone number(s) when an accident detected
 - Playing recorded event and video
